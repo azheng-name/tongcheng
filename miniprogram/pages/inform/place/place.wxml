@@ -1,0 +1,5 @@
+<!--miniprogram/pages/inform/place/place.wxml-->
+<view>
+  <text>开启共享位置：</text>
+  <switch checked="{{isLocaltion}}" bindchange="switchChange" />
+</view>

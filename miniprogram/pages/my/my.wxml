@@ -1,0 +1,28 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="user">
+  <view class="user-info">
+    <image src="{{userPhoto}}"></image>
+    <text wx:if="{{!flag}}">欢迎您：{{nickName}}</text>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" disabled="{{disabled}}">授权登录</button>
+  </view>
+  <view class="navList" wx:if="{{!flag}}">
+    <navigator url="../inform/inform" open-type="navigate">
+      <view class="navList1">
+        <text>个人信息</text>
+        <text class="iconfont icon-right"></text>
+      </view>
+    </navigator>
+    <navigator url="../friend/friend" open-type="navigate">
+      <view class="navList1">
+        <text>好友列表</text>
+        <text class="iconfont icon-right"></text>
+      </view>
+    </navigator>
+    <navigator url="{{'../details/details?id='+id}}" open-type="navigate">
+      <view class="navList1">
+        <text>个人主页</text>
+        <text class="iconfont icon-right"></text>
+      </view>
+    </navigator>
+  </view>
+</view>

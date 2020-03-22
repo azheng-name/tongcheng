@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "remove":"/components/commessage/commessage"
+  },
+  "navigationBarTitleText": "消息"
+}

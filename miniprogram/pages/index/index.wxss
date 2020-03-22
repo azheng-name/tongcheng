@@ -1,0 +1,53 @@
+/* miniprogram/pages/index/index.wxss */
+
+.index-s{
+  margin:20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  height: 300rpx;
+  margin-top:100rpx
+}
+
+.index-s image{
+  width:100%;
+   border-radius: 20rpx;
+   overflow: hidden;
+   height: 300rpx;
+   
+}
+.list{
+  display: flex
+}
+.list view{
+  flex: 1;
+  text-align: center;
+  padding:20rpx;
+  margin:20rpx
+}
+ .list .list-one{
+   border-bottom:1px solid red;
+   color: red
+ }
+ .list-img{
+  display: flex;
+  flex-wrap: wrap
+ }
+ .list-img1{
+  width:50%;
+  margin:10rpx 0
+ }
+ .list-img1 image{width:90%;
+     height: 300rpx;
+     display: block;
+     margin:0 auto
+ 
+ }
+ .textlsit{
+   color: rgb(1, 242, 250);
+   padding-top:5rpx;
+   box-sizing: border-box;
+   width:90%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between
+ }

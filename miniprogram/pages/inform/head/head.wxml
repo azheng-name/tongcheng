@@ -1,0 +1,8 @@
+<!--miniprogram/pages/inform/head/head.wxml-->
+<h2>更换昵称</h2>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">使用微信昵称</button>
+ <image bindtap="img" src="{{userPhoto}}"></image>
+
+<button bindtap="tap">确认更改</button>
+
+

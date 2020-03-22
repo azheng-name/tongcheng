@@ -1,0 +1,10 @@
+<!--miniprogram/pages/friend/friend.wxml-->
+<view class="friendLinst">
+  <text class="text_item">我的好友：</text>
+  <navigator url="{{'../details/details?id='+item._id}}" open-type="navigate" wx:for="{{friendList}}" wx:key="index">
+    <view class="opt-item">
+      <image src="{{item.userPhoto}}"></image>
+      <text>{{item.nickName}}</text>
+    </view>
+  </navigator>
+</view>

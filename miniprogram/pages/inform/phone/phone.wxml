@@ -1,0 +1,4 @@
+<!--miniprogram/pages/inform/phone/phone.wxml-->
+<h2>设置手机号</h2>
+<input type="number" value="{{phoneNumber}}" bindinput="input"></input>
+<button bindtap="number">确认</button>

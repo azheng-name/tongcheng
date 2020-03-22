@@ -1,0 +1,31 @@
+<!--miniprogram/pages/index/index.wxml-->
+<wxs src="../../ulits/word.wxs" module="m1" />
+<wxs src="../../ulits/found.wxs" module="m2" />
+<view class="index">
+   <search />
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" class="index-s" circular="{{true}}">
+    <block wx:for="{{imgUrl}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item.fileId}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="list">
+    <view class="{{currs==='links'?'list-one':''}}" data-currs="links" bindtap="curlist">推荐 </view>
+    <view class="{{currs==='time'?'list-one':''}}" data-currs="time" bindtap="curlist">最新 </view>
+  </view>
+  <view class="list-img">
+    <view class="list-img1" wx:for="{{list}}" wx:key="*this">
+      <image src="{{item.userPhoto}}" mode="scaleToFill" data-id="{{item._id}}" bindtap="navto" />
+      <view class="textlsit">
+        <text>{{m1.word(item.nickName)}}</text>
+        <text data-id="{{item._id}}" bindtap="dainji">
+        <text class="iconfont icon-duomeitiicon-"></text>
+        <text>{{m2.found(item.links)}}</text>
+        </text>
+      </view>
+    </view>
+
+  </view>
+</view>

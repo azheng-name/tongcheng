@@ -1,0 +1,17 @@
+/* miniprogram/pages/inform/inform.wxss */
+.inform-item{
+  margin-top:40rpx
+}
+.inform-item1{
+   display: flex;
+  border-bottom: 1px solid #b4b5b6;
+  height:50rpx;
+  line-height: 50rpx;
+  padding:10rpx;
+  margin:0 10rpx;
+  justify-content: space-between
+}
+.inform-ico{
+  font-size: 12px;
+  color: red
+}

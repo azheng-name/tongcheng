@@ -1,0 +1,5 @@
+<!--miniprogram/pages/nearby/nearby.wxml-->
+<view class="map">
+<search />
+  <map id="map" longitude="{{ longitude }}" latitude="{{ latitude }}" scale="14" markers="{{markers}}" controls="{{controls}}" bindcontroltap="controltap" show-location bindmarkertap="markertap"></map>
+</view>

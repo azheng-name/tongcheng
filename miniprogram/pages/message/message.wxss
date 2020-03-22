@@ -1,0 +1,5 @@
+/* miniprogram/pages/message/message.wxss */
+.text_item{
+  padding:20rpx;
+  display: block
+}

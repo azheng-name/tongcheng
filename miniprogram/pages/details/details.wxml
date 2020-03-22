@@ -1,0 +1,38 @@
+<!--miniprogram/pages/details/details.wxml-->
+<view class="opt">
+  <view class="opt-item">
+    <text>头像：</text>
+    <image src="{{opt.userPhoto}}"></image>
+  </view>
+  <view class="opt-item">
+    <text>昵称：</text>
+    <text>{{opt.nickName}}</text>
+  </view>
+  <view class="opt-item">
+    <text>个性签名：</text>
+    <text>{{opt.signature}}</text>
+
+  </view>
+  <view class="opt-item">
+    <text>手机号：</text>
+    <block wx:if="{{fider}}">
+      <text class="call">{{opt.phoneNumber}}</text>
+      <call call="{{opt.phoneNumber}}" wx:if="{{opt.phoneNumber}}" />
+    </block>
+    <text wx:else style="color:red">仅好友可见</text>
+  </view>
+  <view class="opt-item">
+    <text>微信：</text>
+    <block wx:if="{{fider}}">
+      <text class="copy">{{opt.weixin}}</text>
+      <copy copyText="{{opt.weixin}}" wx:if="{{opt.weixin}}" />
+    </block>
+    <text wx:else style="color:red">仅好友可见</text>
+  </view>
+  <block wx:if="{{!hide}}">
+    <view class="fider">
+      <text wx:if="{{fider}}">已是好友</text>
+      <button wx:else bindtap="firdTap">添加好友</button>
+    </view>
+  </block>
+</view>

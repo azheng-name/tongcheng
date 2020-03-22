@@ -1,0 +1,5 @@
+<!--miniprogram/pages/inform/wx/wx.wxml-->
+<h2>设置微信</h2>
+<input type="text" value="{{weixin}}" bindinput="input"></input>
+<button bindtap="wei">确认</button>
+

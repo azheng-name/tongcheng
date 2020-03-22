@@ -1,0 +1,4 @@
+<!--miniprogram/pages/inform/title/title.wxml-->
+<h2>设置个性签名</h2>
+<input type="text" value="{{signature}}" bindinput="input"></input>
+<button bindtap="tap">确认修改</button>

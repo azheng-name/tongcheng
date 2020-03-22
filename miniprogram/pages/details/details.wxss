@@ -1,0 +1,26 @@
+/* miniprogram/pages/details/details.wxss */
+.opt-item{
+  display: flex;
+  align-items: center;
+  border-bottom:1px solid #ccc;
+  padding:20rpx 0;
+  margin-left:20rpx
+}
+.opt-item image{
+  width:100rpx;
+  height:100rpx
+}
+button{
+  background: greenyellow;
+  color: #fff
+}
+.fider text{
+  margin-top:20rpx;
+  width:100%;
+  display: block;
+  text-align: center;
+  font-size:40rpx
+}
+.call,.copy{
+  margin-right: 20rpx
+}

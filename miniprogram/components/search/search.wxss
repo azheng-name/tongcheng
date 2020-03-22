@@ -1,0 +1,88 @@
+/* components/search/search.wxss */
+
+.connects {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.connectFlous {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 15rpx;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  height: 60rpx;
+  background: #fff;
+}
+
+.search-item .icon-search {
+  margin: 0 10rpx;
+}
+
+.search-item input {
+  flex: 1;
+}
+
+.cancel {
+  margin: 0 10rpx;
+}
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+  margin-bottom: 30rpx;
+}
+.history .icon-delete {
+  font-size: 50rpx;
+}
+
+.history-btn text {
+  border: 1px solid #ccc;
+  padding: 10rpx 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin: 10rpx;
+  display: inline-block
+}
+
+.history-item1 {
+  height: 120rpx;
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-item1 image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx
+}
+
+.history-item1 view {
+  display: flex;
+  align-items: center;
+}

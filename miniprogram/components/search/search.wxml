@@ -1,0 +1,37 @@
+<!--components/search/search.wxml-->
+<view class="{{isFocus?'connectFlous ':'connects '}}">
+
+
+  <view class="search">
+
+    <view class="search-item">
+
+      <text class="iconfont icon-search">
+             </text>
+      <input type="text" placeholder="search" bindfocus="focusTap" bindconfirm="TapCon" confirm-type="search" />
+
+
+    </view>
+
+    <view class="cancel" wx:if="{{isFocus}}" bindtap="onTap">取消</view>
+
+  </view>
+  <view class="history">
+    <text>历史记录</text>
+    <text class="iconfont icon-delete" bindtap="Icon"></text>
+  </view>
+  <view class="history-btn">
+    <text wx:for="{{hisToryList}}" wx:key="index" bindtap="textTap" data-text="{{item}}">{{item}}</text>
+
+  </view>
+  <navigator wx:for="{{searchList}}" wx:key="index" url="{{'/pages/details/details?id='+item._id}}" open-type="navigate">
+    <view class="history-item1">
+      <view>
+        <image src="{{item.userPhoto}}"></image>
+        <text>{{item.nickName}}</text>
+      </view>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </navigator>
+
+</view>

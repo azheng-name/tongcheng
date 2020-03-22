@@ -1,0 +1,44 @@
+/* components/commessage/commessage.wxss */
+
+.area {
+  width: calc(100% - 40rpx);
+  height: 100rpx;
+  margin: 20rpx;
+  position: relative;
+  border-bottom:1px solid #ccc 
+}
+
+.view {
+  width: calc(100% - 100rpx);
+  height: 100%;
+  position: absolute;
+  left: 100rpx;
+  top: 0;
+  line-height: 100rpx;
+  text-indent: 10rpx;
+  z-index: 2;
+  background: #fff;
+}
+
+image {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.deleta {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 100rpx; 
+  background-color:#ccc;
+  z-index: 1;
+  text-align: center;
+  font-size:28rpx;  
+  color: #fff;
+}
